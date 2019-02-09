@@ -1,0 +1,534 @@
+	body
+	{	background-color: black;
+		margin: 0px;
+	}
+/*nav-bar*/
+
+  		ul {
+  			list-style-type: none;
+ 			overflow: hidden;
+ 		   }
+
+		li {
+				  float: right;
+				  list-style-type: none;
+		   }
+
+        li a{
+				 display: block;
+ 				 color: white;
+ 				 text-align: center;
+ 				 margin-top: 0px;
+ 				 text-decoration: none;
+ 				 margin-right: 0px;
+			}
+		.nav
+		{
+		margin-right: 0px;
+		padding-right: 0px;
+		color:white;
+	    }
+
+	.btn 
+		{
+		  border: none; 
+		  color: white;  
+		  font-size: 14px; 
+		  cursor: pointer; 
+		  max-height:16px;
+		  background: transparent;
+		}
+    @media screen and (max-width: 400px)
+    {
+    	.home{display: none;}
+    	.search{display:none;}
+    }
+/*carousel*/
+		.carousel
+		{
+			height:300%;
+			width:100%
+		}
+
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		  height:400px;
+		}
+
+		.mySlides {
+		  display: none;
+		  height:200px;
+		}
+
+
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+    @media screen and (max-width: 400px)
+    {
+    	.carousel{height:200%;
+			width:100%}
+    }
+/*preloader*/
+			
+
+}
+ 
+		#loader 
+		{
+		    position: fixed;
+		    width: 100%;
+		    height: 100vh;
+		    z-index: 999;
+		    overflow: visible;
+		    display:block;
+		    margin-right: auto;
+		    margin-left:auto;
+		}
+		 
+		#content-1
+		{
+		margin-left: 0px;
+		padding-left:0px;
+		margin-top: 20%;
+		}
+
+		.center
+		{
+			width:150px;
+			height:150px;
+			position:absolute;
+			left:54%;
+			top:50%;
+			margin-left:-75px;
+			margin-top: -75px;
+		}
+
+        @media screen and (max-width: 400px)
+        {
+        	#content-1{margin-top: 5%;}
+        }
+ 
+
+//* first page*/
+
+
+
+
+	#myBtn
+		{   display: none; 
+			 position: fixed; 
+			bottom: 20px; 
+			right: 30px; 
+			z-index: 99;
+			border: none; 
+		    outline: none; 
+		    background-color: red; 
+			color: white;
+			font-size: 18px; 
+		}
+
+
+
+
+	.page-1
+	    {
+			background-image: 	url("images/background-2.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+			text-align: center;
+			padding-top: 0px;
+	    }
+
+
+    #front-page
+		{
+		padding-top: 150px;
+ 		color :red;
+ 		text-align: center; 
+ 		}
+	.new-tattoo
+		{
+			font-size:30px;
+	 		align-items: center;
+		}
+	.berger
+		{
+			font-size:55px;
+			align-items: center;
+		}
+	.tattoo-saloon{
+			font-size:30px;
+			align-items: center;
+		}
+
+	#footer
+		{
+			padding-top: 20px;
+			border-color:rgb(0.1,0,1);
+			color:white;
+			text-align: center;
+			font-weight: bold;
+			 border: 1px solid #000000
+ 		}
+
+	#content
+		{
+	  		color:white;
+			font-size: 16px;
+	 		font-family: "Arial", cursive, sans-serif;
+		}
+
+	@media screen and (max-width: 400px)
+		{
+			#content{font-size:10px;}
+			.berger{font-size:30px;}
+			.tattoo-saloon{font-size:15px;}
+			.new-tattoo{font-size:15px;}
+			#click-here-button{ max-width: 80px; margin-top:15px;}
+			.first-page-footer{font-size: 10px;}
+
+		}
+
+
+	#click-here-button
+		{
+	
+			background-color: red;
+			border-color:red;
+			height: 40px;
+		    width:200px;
+			color:white;
+			border:0px solid black;
+			border-radius:5%;
+		}
+
+	.first-page-footer
+		{
+			display: flex;
+			text-align: center;
+			color:white;
+		}
+	.footer
+		{
+			flex:1;
+		}
+	#content
+		{
+			color:white;
+			font-size: 16px;
+			 font-family: "Arial", cursive, sans-serif;
+			margin:4% 5% 2% 10%;
+		}
+	@media screen and (max-width: 400px)
+	    {
+			#content{font-size:10px;}
+			.berger{font-size:30px;}
+			.tattoo-saloon{font-size:15px;}
+			.new-tattoo{font-size:15px;}
+			#click-here-button{max-width: 20px; max-width: 80px; margin-top:15px;}
+			.first-page-footer{font-size: 10px;}
+		}
+
+
+
+	#click-here-button:hover 
+	    {
+			  border: 2px solid black;
+			  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+			  outline-color: rgba(255, 255, 255, 0);
+			  outline-offset: 15px;
+			  text-shadow: 1px 1px 2px #427388;
+			  font-weight: bold;
+		} 
+ 
+
+/*for page 2nd */
+...................................................................................................................		
+
+
+
+			h5
+			{
+				margin-left: 75px;
+				color:red;
+			}
+
+			.page-2{
+				display: flex;
+				text-align: center;
+				margin-left: 0%;
+				flex-wrap: wrap;
+				margin-top: 5%;
+
+
+			}
+			.page-2-child
+			{
+				color:red;
+				flex: 1;
+				text-align: left;
+				margin-left: 4%;
+				flex-wrap: wrap;
+
+			}
+		
+			#button2
+			{
+				background-color: red;
+				color:white;
+				width:200px;
+				height:50px;
+				margin-top: 30px;
+				border:0px solid black;
+				border-radius:5%;
+			}
+			#button2:hover{
+				
+			      border: 2px solid black;
+				  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				  outline-color: rgba(255, 255, 255, 0);
+				  outline-offset: 15px;
+				  text-shadow: 1px 1px 2px #427388;
+				  font-weight: bold;
+				}
+
+			#page-2-subtext-1{color:white;}
+
+			#h3
+			{ font-size:300%;
+				color:white;
+			}
+			#data
+			{
+				padding-top:80px;
+			}
+			.image-1{margin-left: 0px; width:700px; height:300px;}
+
+			@media screen and (max-width: 400px){
+				#h3{font-size:100%;}
+					#button2{ max-width:60px; font-size: 12px; }
+					#page-2-subtext{font-size: 12px;}
+			    	.page-2{display: block;}
+				}
+
+
+
+			
+
+/* page-3*/..........................................................................................................................
+
+             .page-3
+			{
+				margin-top: 60px;
+
+			}
+			#our-services
+			{
+				color:white;
+				width: 100%;
+				font-size: 50px;
+				text-align: center;
+				padding-top: 80px;
+			}
+
+			#our-services-subtext
+			{
+			    text-align: center;
+				color:white;
+				font-size: 20px;
+			}
+
+			.container-parent
+			{
+				display: inline-flex;
+				flex-wrap: wrap;
+				margin-top:40px;
+				text-align: center;
+				font-size: 25px;
+			}
+
+			.container-child
+			{
+				flex:1;
+				border:1px solid white;
+				background: black; 
+			    color:white;
+			    font-size: 16px;
+			    flex-wrap: wrap;
+			    margin:2%;
+		    }
+
+			.image-1
+			{
+				margin-left: 0px;
+				width:100%;
+				height:auto;
+			}
+
+            #button3
+			{
+				background-color: red;	
+				color:white;
+				width:200px;
+				height:50px;
+				margin-top: 5%;
+				border: none;
+		 		border-radius: 5%;
+			}
+
+
+			#button3:hover
+			{
+			      border: 2px solid black;
+				  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				  outline-color: rgba(255, 255, 255, 0);
+				  outline-offset: 15px;
+				  text-shadow: 1px 1px 2px #427388;
+				  font-weight: bold;
+			} 
+
+      		.click
+      		{
+      			text-align: center;
+      		}
+
+			@media screen and (max-width: 400px)
+			{
+
+				#our-sevices{font-size: 15px;}
+				#our-services-subtext{font-size:12px;}
+				h2{font-size:15px;}
+				.container-child{font-size:12px; margin:8%; width:80%;}
+				#button3{max-width: 60px;}
+				.imgg{height:100px; width:100px;}
+				.container-parent{display:block; }
+			}
+
+
+
+/*page-4*/
+
+
+				.page-4{
+					padding: 40px;
+					background-image:url("images/16.jpg");
+					background-attachment: fixed;
+					font-color:red;
+					background-size: cover;
+
+				}
+
+				h6
+				{
+					font-size: 30px;
+				}
+				
+				.testimonial
+				{
+					color:white;
+					font-size: 40px;
+					text-align:center;	
+				}
+				.tes-subtext
+				{
+					color:white;
+					font-size: 25px;
+					text-align: center;
+					margin: 8% 5% 5% 5%;
+				}
+					
+				@media screen and (max-width:400px)
+				{
+					.testimonial{font-size:15px;}
+					.tes-subtext{font-size:12px; color:red;}
+				}
+		
+		        #b
+				{
+				font-size: 25px;
+				 text-align: center;
+				color:white;
+				margin-top: 60px;
+				}
+
+				#b-2
+				{
+					text-align:center;
+					color:red;
+				}
+					
+
+
+
+/*logos for bottom*/
+		.fa:hover {
+    opacity: 0.7;
+}
+
+		.logos
+		{
+			margin-top:60px;
+			display:flex;
+			text-align: : center;
+
+		}
+		.logo
+		{
+			flex:1;
+		justify-content:space-around;
+	    font-size: 58px;}
+
+			
+		.fa {
+		  font-size: 30px;
+		  width: 80px;
+		  height: 50px;
+		  text-decoration: none;
+		
+
+		}
+
+		.fa-facebook {
+		  background: black;
+		  color: blue;
+		  
+		  height:30px;
+		}
+
+
+		.fa-twitter {
+			color:blue;
+			flex:1;
+		}
+		.fa-instagram {
+		  background: black;
+		   color: red;
+		
+		}
+
+		.fa-whatsapp {
+				 
+				  color: green;
+			
+				}
+    @media screen and (max-width:400px)
+	    {.logo{font-size: 30px;}}
+
+	

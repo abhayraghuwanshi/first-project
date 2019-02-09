@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.carousel{height:300%;
+	width:100%}
+	.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height:400px;
+}
+
+.mySlides {
+  display: none;
+  height:200px;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="carousel-1.jpg"  class="carousel">
+  </div>
+
+  <div class="mySlides fade">
+   <img src="carousel-2.jpg"  class="carousel"> 
+  </div>
+
+  <div class="mySlides fade">
+    <img src="carousel-3.jpg"   class="carousel">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="carousel-4.jpg"  class="carousel">
+  </div>
+
+</div>
+</div>
+<script>
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 3000);
+}
+</script>
+</body>
+</html>

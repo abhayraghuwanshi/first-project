@@ -1,37 +1,50 @@
  //preloader
- var loader;
+ var cont =document.querySelector('.con');
+ var loaderl = document.querySelector('.loader');
         function loadNow(opacity) {
             if(opacity <= 0) {
                 displayContent();
             }
             else {
-                loader.style.opacity = opacity;
-                window.setTimeout(function() {
-                    loadNow(opacity - 0.75)
-                }, 1000);
+                loaderl.style.opacity = opacity;
+                window.setTimeout(
+                    loadNow(opacity - 1), 500);
             }
         }
-        
-        function displayContent() {
-            loader.style.display = 'none';
-            document.getElementById('content').style.display = 'block';
+     function displayContent() {
+            loaderl.style.display = 'none';
+            document.getElementById('con').style.display = 'inherit';
         }
         
-        document.addEventListener("DOMContentLoaded", function() {
-            loader = document.getElementById('loader');
-            loadNow(1);
-        })
 //carousel
 var slideIndex = 0;
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+   var main = document.querySelector('.con');
+  var slideshow = main.querySelector('.slideshow-container');
+  var slides= slideshow.querySelectorAll('.mySlides');
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none"; 
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlides, 5000);
 }
+showSlides();
+
+
+//for the button to the top
+var topButton=document.querySelector('#back2Top');
+function scrollFunction()
+{
+    if(document.body.scrollTop>20){topButton.style.display="block"}
+    else{topButton.style.display="none"}
+}
+function topFunction()
+{
+    document.body.scrollTop = 0;
+}
+topButton.addEventListener('onclick' ,topFunction);
+document.addEventListener('onscroll' ,scrollFunction);
